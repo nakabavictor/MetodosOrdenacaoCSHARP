@@ -1,0 +1,14 @@
+C:\Users\Usuario\source\repos\AEDssssss\AEDssssss\bin\Debug\net8.0\AEDssssss.exe
+C:\Users\Usuario\source\repos\AEDssssss\AEDssssss\bin\Debug\net8.0\AEDssssss.deps.json
+C:\Users\Usuario\source\repos\AEDssssss\AEDssssss\bin\Debug\net8.0\AEDssssss.runtimeconfig.json
+C:\Users\Usuario\source\repos\AEDssssss\AEDssssss\bin\Debug\net8.0\AEDssssss.dll
+C:\Users\Usuario\source\repos\AEDssssss\AEDssssss\bin\Debug\net8.0\AEDssssss.pdb
+C:\Users\Usuario\source\repos\AEDssssss\AEDssssss\obj\Debug\net8.0\AEDssssss.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\AEDssssss\AEDssssss\obj\Debug\net8.0\AEDssssss.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\AEDssssss\AEDssssss\obj\Debug\net8.0\AEDssssss.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\AEDssssss\AEDssssss\obj\Debug\net8.0\AEDssssss.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\AEDssssss\AEDssssss\obj\Debug\net8.0\AEDssssss.dll
+C:\Users\Usuario\source\repos\AEDssssss\AEDssssss\obj\Debug\net8.0\refint\AEDssssss.dll
+C:\Users\Usuario\source\repos\AEDssssss\AEDssssss\obj\Debug\net8.0\AEDssssss.pdb
+C:\Users\Usuario\source\repos\AEDssssss\AEDssssss\obj\Debug\net8.0\AEDssssss.genruntimeconfig.cache
+C:\Users\Usuario\source\repos\AEDssssss\AEDssssss\obj\Debug\net8.0\ref\AEDssssss.dll
