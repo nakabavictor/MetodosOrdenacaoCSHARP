@@ -8,6 +8,62 @@ namespace MetodosOrd
 {
     internal class Program
     {
+        //METODO ORDENACAO BUBBLESORT
+        static void bubblesort(int[] array, int n)
+        {
+            for (int i = (n - 1); i > 0; i--)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    if (array[j] > array[j + 1])
+                    {
+                        //se o vetor na posicao j for maior do que o numero no vetor na frente dele, eles trocam de lugar
+                        int temp = array[j];
+                        array[j] = array[j + 1];
+                        array[j + 1] = temp;
+                    }
+                }
+            }
+        }
+
+        //METODO SELECTIONSORT
+        static void selectionsort(int[] array, int n)
+        {
+            for (int i = 0; i < (n - 1); i++)
+            {
+                int menor = i;
+                for (int j = (i + 1); j < n; j++)
+                {
+                    //compara os elemnetos em pares, do 1 ate o ultimo e troca se o elemento da frente for menor que o "menor"
+                    if (array[menor] > array[j])
+                    {
+                        menor = j;
+                    }
+                }
+                int temp = array[i];
+                array[i] = array[menor];
+                array[menor] = temp;
+            }
+        }
+
+        //METODO INSERTIONSORT
+        static void insertsort(int[] array, int n)
+        {
+            for (int i = 1; i < n; i++)
+            {
+                int tmp = array[i];
+                int j = i - 1;
+
+                //pega a partir do segundo elemento e compara se e menor com o primeiro, e depois vai "pegando" cada elemento e comparando com os elemnetos anteriores a esse elemento
+                while ((j >= 0) && (array[j] > tmp))
+                {
+                    array[j + 1] = array[j];
+                    j--;
+                }
+                array[j + 1] = tmp;
+            }
+        }
+
         //METODO DE ORDENACAO QUICKSORT (UNICO METODO COM RECURSIVIDADE QUE VOU FAZER)
         static void quicksort(int[] v, int esquerda, int direita)
         {
@@ -51,12 +107,39 @@ namespace MetodosOrd
 
         static void Main(string[] args)
         {
-            int[] v = { 4, 1, 12, 3, 234343,28438, 2, 45, 22};
-            quicksort(v, 0, v.Length - 1);
-
-            for (int i = 0; i <= v.Length - 1; i++)
+            int[] q = { 4, 1, 12, 3, 234343,28438, 2, 45, 22};
+            quicksort(q, 0, q.Length - 1);
+            Console.WriteLine("Quick: ");
+            for (int i = 0; i <= q.Length - 1; i++)
             {
-                Console.Write(v[i] + " ");
+                Console.Write(q[i] + " ");
+            }
+
+            //bubble
+            int[] b = { 4, 1, 12, 3, 234343, 28438, 2, 45, 22 };
+            bubblesort(b, b.Length);
+            Console.WriteLine("\nBublle: ");
+            for (int i = 0; i <= b.Length - 1; i++)
+            {
+                Console.Write( b[i] + " ");
+            }
+
+            //selection
+            int[] s = { 4, 1, 12, 3, 234343, 28438, 2, 45, 22 };
+            selectionsort(s, s.Length);
+            Console.WriteLine("\nSelection: ");
+            for (int i = 0; i <= s.Length - 1; i++)
+            {
+                Console.Write(s[i] + " ");
+            }
+
+            //insertion
+            int[] ins = { 4, 1, 12, 3, 234343, 28438, 2, 45, 22 };
+            insertsort(ins, ins.Length);
+            Console.WriteLine("\nInsert: ");
+            for (int i = 0; i <= ins.Length - 1; i++)
+            {
+                Console.Write(ins[i] + " ");
             }
             Console.ReadLine();
         }
